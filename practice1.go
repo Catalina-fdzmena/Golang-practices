@@ -31,6 +31,7 @@ func main() {
 
 	reader := bufio.NewReader(os.Stdin)
 	fmt.Print("Mi nombre es: ")
+
 	name, _ := reader.ReadString('\n')
 	fmt.Print(name)
 
@@ -59,4 +60,31 @@ func main() {
 	default:
 		fmt.Println("Max es el perro")
 	}
+
+	//
+
+	//Otra versión de hacer el swtich
+
+	switch {
+	case name == "Anubis":
+		fmt.Println("Anubis es el perro")
+	case name == "Suri":
+		fmt.Println("Suri es el perro")
+	default:
+		fmt.Println("Max es el perro")
+	}
+
+	//Palabra reservada fallthrough
+
+	//Es una cascada para que se pase al siguiente pre de igual manera se muestra lo que estaba previamente
+
+	switch {
+	case name == "Anubis":
+		fallthrough
+	case name == "Suri":
+		fmt.Println("Suri es el perro")
+	default:
+		fmt.Println("Max es el perro")
+	}
+
 }
