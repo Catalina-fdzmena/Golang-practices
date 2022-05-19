@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"math/rand"
 	"os"
 	"strings"
 )
@@ -41,5 +42,11 @@ func main() {
 
 	} else {
 		fmt.Println("No hay perro")
+	}
+
+	if rand_num := rand.Intn(10); rand_num == 5 {
+		fmt.Println("El numero es 5")
+	} else {
+		fmt.Println("No es 5")
 	}
 }
