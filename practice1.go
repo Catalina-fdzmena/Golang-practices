@@ -49,4 +49,14 @@ func main() {
 	} else {
 		fmt.Println("No es 5")
 	}
+
+	//Estrcutura de switch cases
+	switch name {
+	case "Anubis":
+		fmt.Println("Anubis es el perro")
+	case "Suri":
+		fmt.Println("Suri es el perro")
+	default:
+		fmt.Println("Max es el perro")
+	}
 }
