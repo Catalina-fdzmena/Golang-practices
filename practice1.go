@@ -37,7 +37,7 @@ func main() {
 	if strings.Compare(name, "Anubis") == 0 {
 		fmt.Println("Anubis está enferma")
 
-	} else if strings.Compare(name, "Suri") == 0 {
+	} else if strings.Compare(name, "Suri\r\n") == 0 {
 		fmt.Println("Suri necesita bajar de peso")
 
 	} else {
