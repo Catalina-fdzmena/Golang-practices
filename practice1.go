@@ -9,8 +9,6 @@ import (
 func main() {
 	fmt.Println("Hola mundo")
 	const PI = 3.1416
-	distancia2 := 3
-	distancia = 4
 	var a, b = 1, 2
 
 	// Comentario
@@ -33,4 +31,14 @@ func main() {
 	fmt.Print("Mi nombre es: ")
 	name, _ := reader.ReadString('\n')
 	fmt.Print(name)
+
+	if name == "Anubis" {
+		fmt.Println("Anubis está enferma")
+
+	} else if name == "Suri" {
+		fmt.Println("Suri necesita bajar de peso")
+
+	} else {
+		fmt.Println("No hay perro")
+	}
 }
