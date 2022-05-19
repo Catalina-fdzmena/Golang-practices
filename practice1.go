@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"strings"
 )
 
 func main() {
@@ -32,10 +33,10 @@ func main() {
 	name, _ := reader.ReadString('\n')
 	fmt.Print(name)
 
-	if name == "Anubis" {
+	if strings.Compare(name, "Anubis") == 0 {
 		fmt.Println("Anubis está enferma")
 
-	} else if name == "Suri" {
+	} else if strings.Compare(name, "Suri") == 0 {
 		fmt.Println("Suri necesita bajar de peso")
 
 	} else {
