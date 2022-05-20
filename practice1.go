@@ -87,4 +87,40 @@ func main() {
 		fmt.Println("Max es el perro")
 	}
 
+	//SAsignación de variables
+	switch rand_num := rand.Intn(2); rand_num {
+	case 0:
+		fmt.Println("0")
+	case 1:
+		fmt.Println("1")
+
+	default:
+		fmt.Println("Otro número")
+	}
+
+	//Trabajar con ciclos
+
+	fmt.Println("++++++++++++++++++++++++++++++++++++++++")
+
+	var count = 0
+
+	for {
+		if count == 5 {
+			fmt.Println("El count es 5, bye!")
+		} else if count == 4 {
+			count++
+			continue
+		}
+	}
+
+	//Contador 2 vive unicamente en el for
+	for Contador = 0; Contador < 5; Contador++ {
+		fmt.Println("El count es: ", Contador)
+	}
+
+	//COntador 2 vive unicamente en el for
+	for contador2 := 0; contador2 < 5; contador2++ {
+		fmt.Println("El contador2 es: ", contador2)
+	}
+
 }
