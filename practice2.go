@@ -19,6 +19,16 @@ func DotProduct(v1, v2 [3]float64) (float64, bool) {
 type celsius float64
 type kelvin float64
 
+//Definición de una función
+func CelsiusToKelvin(c celsius) kelvin {
+	return kelvin(c + 273.15)
+}
+
+//Método
+func (c celsius) kelvin() kelvin {
+	return kelvin(c + 273.13)
+}
+
 func DotProduct2(v1, v2 []float64) (float64, bool) {
 	if len(v1) != len(v2) {
 		return 0.0, false
@@ -112,4 +122,9 @@ func main() {
 	var grados_c celsius
 	grados_c = 23
 	fmt.Println("Hoy hay ", grados_c, "°C")
+	kelvin1 := CelsiusToKelvin(grados_c)
+	kelvin2 := grados_c.kelvin()
+
+	fmt.Println("Kelvin1 es igual a ", kelvin1)
+	fmt.Println("Kelvin2 es igual a ", kelvin2)
 }
