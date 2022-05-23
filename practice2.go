@@ -15,6 +15,10 @@ func DotProduct(v1, v2 [3]float64) (float64, bool) {
 	return result, false
 }
 
+//Definiciones proipias de tipos
+type celsius float64
+type kelvin float64
+
 func DotProduct2(v1, v2 []float64) (float64, bool) {
 	if len(v1) != len(v2) {
 		return 0.0, false
@@ -94,4 +98,18 @@ func main() {
 		s1 = append(s1, 11)
 		fmt.Println(arreglo,  s1)
 	*/
+	/*
+
+		s := arreglo[i:j:k]
+		i - posición inicial del arreglo
+		j posición final del slice no inclusiva
+		k capacidad
+
+	*/
+
+	fmt.Println("*********************************************")
+
+	var grados_c celsius
+	grados_c = 23
+	fmt.Println("Hoy hay ", grados_c, "°C")
 }
