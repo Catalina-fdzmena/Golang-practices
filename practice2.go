@@ -98,4 +98,5 @@ func main() {
 	result.error := dot_product2(vector1, vector2)
 	result := dot_product2(vector1, "dot product", vector2, result, "=", "error?", error)
 
+	s1 = append(s1, 8)
 }
