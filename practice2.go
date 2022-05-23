@@ -18,4 +18,6 @@ func main() {
 
 	//**********************************************
 
+	//Slice vistas de una arreglo que permiten manera el tamaño de los parámetros
+
 }
