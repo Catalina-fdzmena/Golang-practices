@@ -1,4 +1,6 @@
 //Andrea Catalina Fernández Mena A01197705
+//Practicas con funciones , listas, etc.
+
 package main
 
 import (
