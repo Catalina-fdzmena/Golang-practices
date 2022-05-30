@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"time"
 )
 
 func hola_hilo() {
@@ -10,6 +11,12 @@ func hola_hilo() {
 
 func main() {
 	go hola_hilo()
+	go hola_hilo()
+	go hola_hilo()
+	go hola_hilo()
+	go hola_hilo()
+
+	time.Sleep(30 * time.Second)
 }
 
 //Inicia hilo procesamiento pero no lo marca de regreso por el tiempo que toma un cambio de contexto.
