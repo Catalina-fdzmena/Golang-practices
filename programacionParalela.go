@@ -5,16 +5,14 @@ import (
 	"time"
 )
 
-func hola_hilo() {
-	fmt.Println("Hola, soy Panchito concurrente")
+func hola_hilo(id int) {
+	fmt.Printf("Hola, soy Panchito %d concurrente\n", id)
 }
 
 func main() {
-	go hola_hilo()
-	go hola_hilo()
-	go hola_hilo()
-	go hola_hilo()
-	go hola_hilo()
+	for i := 0; i < 20; i++ {
+		go hola_hilo(i)
+	}
 
 	time.Sleep(30 * time.Second) //Con este comando se desarrolla comando para desarrolle un intervalo de la reproducción
 }
